@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Cumberland Farmer's Market — Rooted Here</title>
+  <meta name="description" content="A community-run online farmers market serving Grundy, Marion, Franklin, Coffee, and Sequatchie counties in the South Cumberland region of Tennessee.">
+  <!-- TODO: add favicon — download from southcumberlandfarmersmarket.com/favicon.ico and save to images/favicon.ico -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <div id="order-banner"></div>
+  <header id="site-header"></header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <!-- TODO: replace pale-gold bg with a full-bleed hero photo:
+         .hero { background: url('images/hero-market.jpg') center/cover no-repeat; }
+         Add a .hero-photo class and adjust text color for contrast. -->
+    <section class="hero" aria-label="Welcome">
+      <div class="hero-inner">
+        <h1>Visit Our Online Market<br>at the Open Food Network</h1>
+        <a href="https://openfoodnetwork.net/south-cumberland-farmer-s-market/shop"
+           class="btn btn-large"
+           target="_blank"
+           rel="noopener noreferrer">
+          Shop at the Market
+        </a>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="section bg-cream-gold" aria-labelledby="about-heading">
+      <div class="section-inner-narrow">
+        <h2 id="about-heading" class="section-heading">About Our Market</h2>
+        <p>
+          We are a community-run market providing local products from family farms
+          located primarily in Coffee, Franklin, Grundy, Marion and Sequatchie
+          counties in the South Cumberland region of Tennessee.
+        </p>
+        <p>
+          Our online ordering platform is hosted by the Open Food Network, a
+          global, open-source software designed to create networks of local food
+          access in small communities around the world.
+        </p>
+        <p class="mt-3">
+          <a href="shopping-tips.html">Learn how to shop →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── ORDER CYCLE CALLOUT ── -->
+    <section class="section bg-pale-gold" aria-labelledby="cycle-heading">
+      <div class="section-inner-narrow">
+        <h2 id="cycle-heading" class="section-heading">How the Order Cycle Works</h2>
+        <div class="callout">
+          <p><strong>Orders open:</strong> Friday at 9:00pm</p>
+          <p><strong>Orders close:</strong> Monday at 10:00am</p>
+          <p><strong>Pickup:</strong> Tuesday 4:15–6:00pm</p>
+          <p><strong>Location:</strong> Sewanee Community Center, 3939 Ballpark Rd, Sewanee TN 37375</p>
+          <p><strong>After-hours pickup available</strong> — select at checkout</p>
+        </div>
+        <p>
+          <a href="faqs.html">Have questions? See our customer FAQs →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SUBSTACK NEWS STRIP ── -->
+    <section class="news-strip" aria-labelledby="news-heading">
+      <div class="section-inner">
+        <h2 id="news-heading" class="section-heading" style="text-align:center;">Latest from SCFM</h2>
+        <div class="news-cards-scroll" id="news-strip-scroll">
+          <!-- JS renders cards here via initHomeNewsStrip() -->
+          <div class="news-cards-scroll" id="news-strip-cards" style="display:contents;">
+            <div class="news-card" aria-hidden="true">
+              <div class="news-card-placeholder-img"></div>
+              <h3>Loading newsletter posts…</h3>
+              <div class="news-date"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── NEWSLETTER SIGNUP ── -->
+    <section class="section bg-pale-gold" aria-labelledby="newsletter-heading">
+      <div class="section-inner-narrow text-center">
+        <h2 id="newsletter-heading" class="section-heading">Stay in the Loop</h2>
+        <p>
+          Subscribe to our weekly newsletter for order announcements,
+          farm news, and seasonal recipes.
+        </p>
+        <a href="https://scfm.substack.com"
+           class="btn btn-green"
+           target="_blank"
+           rel="noopener noreferrer">
+          Subscribe on Substack →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

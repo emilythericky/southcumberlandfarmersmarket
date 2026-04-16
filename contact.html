@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — South Cumberland Farmer's Market</title>
+  <meta name="description" content="Contact the South Cumberland Farmer's Market. Email us, find our location, or learn how to volunteer.">
+  <!-- TODO: add favicon — download from southcumberlandfarmersmarket.com/favicon.ico -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  <div id="order-banner"></div>
+  <header id="site-header"></header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <!-- TODO: replace pale-gold bg with a full-bleed farm photo (e.g. chickens):
+         .hero { background: url('images/hero-chickens.jpg') center/cover no-repeat; }
+         Add class="hero hero-photo" for the dark-overlay variant. -->
+    <section class="hero" aria-label="Contact">
+      <div class="hero-inner">
+        <h1>Contact us.</h1>
+      </div>
+    </section>
+
+    <!-- ── EMAIL BUTTON ── -->
+    <section class="section bg-pale-gold" aria-labelledby="contact-heading">
+      <div class="section-inner-narrow">
+        <h2 id="contact-heading" class="section-heading">Get in Touch</h2>
+
+        <div class="contact-email-wrap">
+          <a href="mailto:cumberlandfm@gmail.com"
+             class="btn btn-large btn-lavender">
+            Email the Market
+          </a>
+          <p class="mt-2">
+            For all inquiries — orders, billing, tech support, and general questions
+          </p>
+        </div>
+
+        <!-- ── VOLUNTEER CALLOUT ── -->
+        <div class="callout">
+          <p><strong>Volunteer with us on Tuesday at market pickup:</strong></p>
+          <p>Packing shift: ~2:00pm &nbsp;|&nbsp; Pickup line: ~4:15pm</p>
+          <p>Sewanee Community Center</p>
+          <p>3939 Ballpark Rd, Sewanee TN 37375</p>
+          <p>
+            <a href="mailto:cumberlandfm@gmail.com">Email us to get involved →</a>
+          </p>
+        </div>
+
+        <!-- ── MAILING ADDRESS CALLOUT ── -->
+        <div class="callout">
+          <p><strong>Write to us or send a check by mail:</strong></p>
+          <p>PO Box 222</p>
+          <p>Monteagle, TN 37356</p>
+        </div>
+
+        <!-- ── GOOGLE MAP ── -->
+        <!--
+          TODO: For best results, get the embed code directly from Google Maps:
+          1. Go to https://www.google.com/maps
+          2. Search "3939 Ballpark Rd, Sewanee, TN 37375"
+          3. Click Share → Embed a map → Copy HTML
+          4. Replace the iframe src below with the one from Google
+        -->
+        <div class="map-wrap">
+          <iframe
+            title="Sewanee Community Center map"
+            src="https://maps.google.com/maps?q=3939+Ballpark+Rd,+Sewanee,+TN+37375&output=embed"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── VENDOR APPLICATION LINK ── -->
+    <section class="section bg-cream-gold" aria-labelledby="vendor-heading">
+      <div class="section-inner-narrow text-center">
+        <h2 id="vendor-heading" class="section-heading">Want to Sell at the Market?</h2>
+        <p>
+          We're always interested in connecting with local growers and producers.
+          Read our grower FAQ and apply to join.
+        </p>
+        <p class="mt-3">
+          <a href="grower-faqs.html" class="btn btn-green">See Grower FAQs &amp; Apply →</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

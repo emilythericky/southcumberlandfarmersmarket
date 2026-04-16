@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check /home/emily/Documents/SCFMsite/js/main.js)",
+      "Bash(grep:*)",
+      "Bash(git config *)"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Farmers — South Cumberland Farmer's Market</title>
+  <meta name="description" content="Meet the family farms and producers who grow and make everything available through the South Cumberland Farmer's Market.">
+  <!-- TODO: add favicon — download from southcumberlandfarmersmarket.com/favicon.ico -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="farmers">
+
+  <div id="order-banner"></div>
+  <header id="site-header"></header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <!-- TODO: replace pale-gold bg with a full-bleed farm photo:
+         .hero { background: url('images/hero-farm.jpg') center/cover no-repeat; }
+         Add class="hero hero-photo" and adjust for readability. -->
+    <section class="hero" aria-label="Our Growers">
+      <div class="hero-inner">
+        <h1>Our Growers</h1>
+        <p>Family farms from Coffee, Franklin, Grundy, Marion, and Sequatchie counties</p>
+      </div>
+    </section>
+
+    <!-- ── INTRO ── -->
+    <section class="section bg-cream-gold" aria-labelledby="intro-heading">
+      <div class="section-inner-narrow">
+        <h2 id="intro-heading" class="section-heading">Meet Our Producers</h2>
+        <p>
+          Meet the farmers and producers who grow and make everything available
+          through our market. All of our growers are vetted by our board of
+          directors and must meet our standards for sustainable, local production.
+        </p>
+        <p>
+          To shop from a specific grower, visit our market on the Open Food Network
+          and use the Producers filter.
+        </p>
+        <p class="mt-3">
+          <a href="https://openfoodnetwork.net/south-cumberland-farmer-s-market/shop"
+             class="btn btn-green"
+             target="_blank"
+             rel="noopener noreferrer">
+            Shop by Producer →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── FARMERS GRID ── -->
+    <!-- Data loaded from data/farmers.json by JS (initFarmersPage) -->
+    <!-- TODO: replace placeholder entries in data/farmers.json with real farmer data.
+         For farmer photos, save images to images/farmers/farmname.jpg
+         and update the "photo" field in farmers.json. -->
+    <section class="section bg-pale-gold" aria-labelledby="farmers-heading">
+      <div class="section-inner">
+        <h2 id="farmers-heading" class="section-heading">Our Grower Community</h2>
+        <div class="farmers-grid" id="farmers-grid">
+          <!-- Rendered by JS -->
+          <p>Loading farmer profiles…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SELL WITH US ── -->
+    <section class="section bg-pale-gold" aria-labelledby="sell-heading">
+      <div class="section-inner-narrow">
+        <h2 id="sell-heading" class="section-heading">Sell With Us</h2>
+        <div class="callout">
+          <h3>Interested in selling through the SCFM?</h3>
+          <p>We serve Grundy, Marion, Franklin, Coffee, and Sequatchie counties.</p>
+          <p>Growers are charged a low 4.5% fee — far below most markets — and you only bring
+             what's already sold.</p>
+        </div>
+        <div class="btn-row mt-3">
+          <a href="grower-faqs.html" class="btn">See Grower FAQs →</a>
+          <a href="contact.html" class="btn btn-green">Get in Touch →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

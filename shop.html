@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop & Products — South Cumberland Farmer's Market</title>
+  <meta name="description" content="Browse what our growers carry and shop the South Cumberland Farmer's Market on the Open Food Network.">
+  <!-- TODO: add favicon — download from southcumberlandfarmersmarket.com/favicon.ico -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+
+  <div id="order-banner"></div>
+  <header id="site-header"></header>
+
+  <main>
+
+    <!-- ── SHOP MODE BANNER (open / closed — rendered by JS) ── -->
+    <div id="shop-mode-banner" class="shop-mode-banner mode-closed" aria-live="polite">
+      <h2>Browse what we carry below</h2>
+      <p>Ordering opens Friday at 9pm</p>
+    </div>
+
+    <!-- ── CSS SCROLLING MARQUEE (pure CSS, no JS) ── -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <!-- Duplicate content fills the second half so the loop is seamless -->
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <!-- Duplicate for seamless loop -->
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+        <span>Our Grower's Products</span>
+        <span>&bull;</span>
+      </div>
+    </div>
+
+    <!-- ── PRODUCT PHOTO GRID (placeholder — replace with real photos) ── -->
+    <!-- TODO: replace placeholder divs with actual product photos.
+         Save photos to images/products/ and replace each div with:
+         <div class="product-placeholder" style="height:Npx;">
+           <img src="images/products/filename.jpg" alt="Category name">
+         </div>  -->
+    <section class="product-grid-section" aria-label="Product photo gallery">
+      <div class="product-grid">
+        <div class="product-placeholder" style="height:200px; background:#C5E09A;">Fresh Vegetables</div>
+        <div class="product-placeholder" style="height:270px; background:#B8AADC;">Artisan Cheese</div>
+        <div class="product-placeholder" style="height:160px; background:#EDD97A;">Pastured Eggs</div>
+        <div class="product-placeholder" style="height:230px; background:#9AAFC4;">Local Honey</div>
+        <div class="product-placeholder" style="height:300px; background:#C5E09A;">Cut Flowers</div>
+        <div class="product-placeholder" style="height:190px; background:#B8AADC;">Heritage Meat</div>
+        <div class="product-placeholder" style="height:240px; background:#EDD97A;">Baked Goods</div>
+        <div class="product-placeholder" style="height:180px; background:#9AAFC4;">Mushrooms</div>
+        <div class="product-placeholder" style="height:210px; background:#C5E09A;">Fruit</div>
+        <div class="product-placeholder" style="height:250px; background:#B8AADC;">Body Care</div>
+      </div>
+    </section>
+
+    <!-- ── WHAT WE CARRY ── -->
+    <!-- TODO: add full-bleed garden/kale photo as background with dark overlay:
+         .categories-section {
+           background: linear-gradient(rgba(45,74,30,0.88), rgba(45,74,30,0.88)),
+                       url('images/categories-bg.jpg') center/cover no-repeat;
+         } -->
+    <section class="categories-section" aria-labelledby="categories-heading">
+      <h2 id="categories-heading" class="section-heading">What We Carry</h2>
+
+      <div class="categories-grid">
+
+        <!-- Left column -->
+        <div class="category-col">
+          <h3>Comestibles</h3>
+
+          <div class="category-item">
+            <strong>Baked Goods, Sauces &amp; Salts</strong>
+            <span> — Breads, Pastries, Cookies &amp; Cakes, hot sauces, salsas, flavored salts</span>
+          </div>
+          <div class="category-item">
+            <strong>Beverages</strong>
+            <span> — Fermented drinks, Fruit Juice, Cider</span>
+          </div>
+          <div class="category-item">
+            <strong>Candy | Coffee</strong>
+          </div>
+          <div class="category-item">
+            <strong>Dairy</strong>
+            <span> — Cow-milk and goat-milk cheeses</span>
+          </div>
+          <div class="category-item">
+            <strong>Eggs</strong>
+            <span> — Free range, cage-free</span>
+          </div>
+          <div class="category-item">
+            <strong>Fermented Foods</strong>
+          </div>
+          <div class="category-item">
+            <strong>Fruit</strong>
+            <span> — Apples, Berries, Cherries, Dried Fruit, Elderberries, Figs, Grapes, Maypop (passion fruit), Melons, Muscadines, Nectarines, Peaches, Pears, Plums, Pomegranates, Rhubarb, Watermelon</span>
+          </div>
+          <div class="category-item">
+            <strong>Herbs &amp; Spices</strong>
+            <span> — Fresh and dried herbs, spice mixes</span>
+          </div>
+          <div class="category-item">
+            <strong>Honey | Jams &amp; Jellies</strong>
+          </div>
+          <div class="category-item">
+            <strong>Meat</strong>
+            <span> — Beef, Goat, Chicken, Lamb, Pork, Rabbit, Turkey</span>
+          </div>
+          <div class="category-item">
+            <strong>Milled Products &amp; Dried Goods</strong>
+          </div>
+          <div class="category-item">
+            <strong>Mushrooms</strong>
+            <span> — Oyster, Shiitake, Lion's Mane, mushroom products</span>
+          </div>
+          <div class="category-item">
+            <strong>Nuts | Pet Food | Prepared Foods &amp; Mixes</strong>
+          </div>
+          <div class="category-item">
+            <strong>Vegetables</strong>
+            <span> — Arugula, Asparagus, Beans, Beets, Bitter Melon, Bok Choy, Broccoli, Brussels Sprouts, Cabbage, Carrots, Cauliflower, Celery, Chives, Corn, Cucumbers, Edible Flowers, Eggplant, Fig &amp; Grape Leaves, Garlic, Leafy Greens (Chard, Kale, Mustards, Spinach, Collards), Horseradish, Kohlrabi, Leeks, Lettuce, Okra, Onions, Parsnips, Peas, Peppers, Potatoes, Pumpkins, Purslane, Radicchio, Radishes, Squash, Sunchokes, Sweet Potatoes, Tomatillos, Tomatoes, Turnips, Zucchini</span>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="category-col">
+          <h3>Body Care Products</h3>
+          <div class="category-item">
+            <span>Soaps, Lotions, Lip Balms, Shampoo Bars, Salves, Essential Oils</span>
+          </div>
+
+          <h3 style="margin-top:1.5rem;">Craft / Gift / Non-Food</h3>
+          <div class="category-item">
+            <span>Books, Candles, Compost &amp; Soil Amendments, Cut Flowers, Decorative Items (Wreaths, Garlands), Fiber, Gourds, Incense, Market Items (Tote bags, Memberships, Gift Certificates, Donations), Natural Dye Kits, Seeds, Wood Products, Worms and Insects</span>
+          </div>
+
+          <h3 style="margin-top:1.5rem;">Live Plants &amp; Animals</h3>
+          <div class="category-item">
+            <span>Greenhouse Plants, Live Chickens</span>
+          </div>
+        </div>
+
+      </div><!-- /categories-grid -->
+    </section>
+
+    <!-- ── CURRENT LISTINGS ── -->
+    <section class="section bg-cream-gold" aria-labelledby="listings-heading">
+      <div class="section-inner">
+        <h2 id="listings-heading" class="section-heading">Current &amp; Recent Listings</h2>
+        <p class="section-subheading">
+          Browse what our growers have offered.
+          Actual availability changes each week — check back Friday at 9pm.
+        </p>
+
+        <!-- Filter bar — populated by JS when products exist -->
+        <div class="product-filter-bar" id="product-filter-bar"></div>
+
+        <!-- Product cards — rendered by JS from data/products.json -->
+        <div id="product-listings">
+          <div class="callout">
+            <p>Product listings will appear here once our data pipeline is connected.</p>
+            <p>Check back Friday at 9pm when orders open!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

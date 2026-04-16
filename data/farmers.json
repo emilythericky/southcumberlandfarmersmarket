@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Example Farm",
+    "county": "Grundy",
+    "description": "TODO: Replace with real farmer data. This placeholder shows how farm descriptions will appear — a brief summary of what the farm grows or produces and their approach to farming.",
+    "certifications": ["No Chem"],
+    "photo": ""
+  },
+  {
+    "name": "Placeholder Ridge Farm",
+    "county": "Marion",
+    "description": "TODO: Replace with real farmer data. This placeholder shows how farm descriptions will appear — a brief summary of what the farm grows or produces and their approach to farming.",
+    "certifications": ["Certified Naturally Grown", "Woman Owned"],
+    "photo": ""
+  },
+  {
+    "name": "Sample Hollow Homestead",
+    "county": "Franklin",
+    "description": "TODO: Replace with real farmer data. This placeholder shows how farm descriptions will appear — a brief summary of what the farm grows or produces and their approach to farming.",
+    "certifications": ["No Chem", "USDA Certified Organic"],
+    "photo": ""
+  }
+]

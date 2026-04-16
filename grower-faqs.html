@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grower FAQs & Vendor Application — South Cumberland Farmer's Market</title>
+  <meta name="description" content="Information for growers interested in selling through the South Cumberland Farmer's Market, plus our vendor application form.">
+  <!-- TODO: add favicon — download from southcumberlandfarmersmarket.com/favicon.ico -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="grower-faqs">
+
+  <div id="order-banner"></div>
+  <header id="site-header"></header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <!-- TODO: replace pale-gold bg with a full-bleed garden rows photo:
+         .hero { background: url('images/hero-garden-rows.jpg') center/cover no-repeat; }
+         Add class="hero hero-photo" for the dark-overlay variant. -->
+    <section class="hero" aria-label="Grower FAQs">
+      <div class="hero-inner">
+        <h1>Frequently asked questions.</h1>
+        <p>For growers and prospective vendors</p>
+      </div>
+    </section>
+
+    <!-- ── GROWER FAQ CONTENT ── -->
+    <section class="section bg-pale-gold" aria-labelledby="grower-faqs-heading">
+      <div class="section-inner-narrow">
+        <h2 id="grower-faqs-heading" class="section-heading">Grower FAQs</h2>
+
+        <ul class="faq-list" aria-label="Grower frequently asked questions">
+
+          <li class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              I am a farmer — how do I sell my products through your market?
+            </button>
+            <div class="faq-answer">
+              Make an account at the Open Food Network, create an enterprise, add
+              your products, and create permissions for your enterprise to allow the
+              South Cumberland Farmers Market to "add products to order cycle." Get in
+              touch with us for approval. You will need to be located in the counties
+              we serve (Grundy, Marion, Franklin, Coffee), or get special approval from
+              our board of directors.
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are there membership fees?
+            </button>
+            <div class="faq-answer">
+              Growers are charged 4.5% of sales to compensate the market manager(s).
+              The fee can be reduced to 3.5% by volunteering regularly. Membership to
+              Rooted Here/SCFM is required to sell at the market. See the Growers
+              Agreement contract for ways to satisfy the membership requirement.
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Why should I sell through the SCFM?
+            </button>
+            <div class="faq-answer">
+              Our market's mission is to minimize costs and labor for growers by
+              pre-selling your products via our online platform so you know exactly how
+              much and what to bring to market on Tuesdays. We also boast a very low
+              fee — 4.5% — compared to other similar markets that charge anywhere from
+              10% to 20%.
+            </div>
+          </li>
+
+        </ul>
+
+        <hr class="divider">
+        <p>
+          <a href="faqs.html">← Customer FAQs</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── VENDOR APPLICATION ── -->
+    <section class="section bg-cream-gold" aria-labelledby="apply-heading">
+      <div class="section-inner-narrow">
+
+        <div class="callout">
+          <h3>Apply to Sell at the Market</h3>
+          <p>
+            Ready to join our grower community? Fill out the application below to get
+            started. We'll review it and be in touch.
+          </p>
+        </div>
+
+        <!--
+          TODO: Formspree setup
+          1. Sign up at https://formspree.io (free tier works for low volume)
+          2. Create a new form and copy the form ID
+          3. Replace REPLACE_WITH_YOUR_ID below with your actual form ID
+          Example: action="https://formspree.io/f/xpzkdoab"
+        -->
+        <div class="application-form-wrap">
+          <form
+            id="vendor-form"
+            action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
+            method="POST"
+            novalidate>
+
+            <!-- Honeypot spam field — hidden from real users -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-group">
+              <label for="farm-name">Farm / Business Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="farm-name" name="farm_name" required autocomplete="organization">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-name">Contact Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="contact-name" name="contact_name" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+              <label for="county">County <span aria-hidden="true">*</span></label>
+              <select id="county" name="county" required>
+                <option value="" disabled selected>Select your county…</option>
+                <option value="Grundy">Grundy</option>
+                <option value="Marion">Marion</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Coffee">Coffee</option>
+                <option value="Sequatchie">Sequatchie</option>
+                <option value="Other">Other (please describe below)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="products">What do you grow or produce? <span aria-hidden="true">*</span></label>
+              <textarea id="products" name="products" required
+                placeholder="Describe the products you'd like to sell through the market…"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="practices">How would you describe your growing practices?</label>
+              <textarea id="practices" name="practices"
+                placeholder="E.g. no-spray, certified naturally grown, conventional, USDA organic…"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Do you currently sell on the Open Food Network?</label>
+              <div class="form-radio-group">
+                <label>
+                  <input type="radio" name="on_ofn" value="Yes" required>
+                  Yes
+                </label>
+                <label>
+                  <input type="radio" name="on_ofn" value="No">
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Anything else you'd like us to know?</label>
+              <textarea id="notes" name="notes"
+                placeholder="Any questions, context, or additional information…"></textarea>
+            </div>
+
+            <div class="form-group form-submit">
+              <button type="submit" class="btn btn-green btn-large">Submit Application</button>
+            </div>
+
+          </form>
+
+          <!-- Shown after successful Formspree submission -->
+          <div id="form-thankyou" class="form-thankyou" role="alert"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
